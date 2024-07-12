@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Syed Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div class="header"> 
+            <nav>
+                <h3>Syed Amin</h3>
+                
+                <div class="nav-menu" id="navemenus">
+                    <span onclick="hideMenu()">X</span>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li>
+                            <input type="text" name="search" placeholder="Search"> 
+                            <input type="submit" name="submit" value="Search">
+                        </li>
+                    </ul>
+                </div> 
+                <span onclick="openMenu()">Menu</span>
+                <img src="image/3.png" class="profile-image">
+            </nav>
+
+            <div class="title-description">
+                <h1>SAH</h1>
+                <p>Hello! My name is Syed Amin. I am currently pursuing a BSc Honours degree at Metropolitan University.<br> 
+                My student ID is 222-115-062. Alongside my academic pursuits, I have practical skills in web development,<br> 
+                which I continuously work to enhance. I am passionate about leveraging technology to create innovative<br> 
+                solutions and am eager to contribute to impactful projects.</p>
+                <a href="#">Hear me</a> &nbsp; <a href="#">About Me</a>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p>Phone: 0164292244</p>
+            <p>Email: <a href="mailto:sahsipon@gmail.com">sahsipon@gmail.com</a></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100084425836173" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/syedamin2023/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/syed-amin-a88b78261/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/0164292244" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var navemenus = document.getElementById('navemenus');
+            function openMenu(){
+                navemenus.style.right = "0";
+            }
+
+            function hideMenu(){
+                navemenus.style.right = "-300px";
+            }
+        </script>
+    </body>
+</html>
